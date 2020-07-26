@@ -11,26 +11,28 @@
   <button id="turn-off" name="turnoff">Turn Off </button>
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 
   <!-- TODO: Add SDKs for Firebase products that you want to use
        https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
 
   <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "REPLACE_WITH_YOUR_OWN",
-    authDomain: "REPLACE_WITH_YOUR_OWN",
-    databaseURL: "REPLACE_WITH_YOUR_OWN",
-    projectId: "REPLACE_WITH_YOUR_OWN",
-    storageBucket: "REPLACE_WITH_YOUR_OWN",
-    messagingSenderId: "REPLACE_WITH_YOUR_OWN",
-    appId: "REPLACE_WITH_YOUR_OWN"
+    apiKey: "AIzaSyDygn-xLyCxKoW5nTVc2M15klFukb5ttBU",
+    authDomain: "strength-77831.firebaseapp.com",
+    databaseURL: "https://strength-77831.firebaseio.com/",
+    projectId: "strength-77831",
+    storageBucket: "strength-77831.appspot.com",
+    messagingSenderId: "1049699853669",
+    appId: "1:1049699853669:web:605b99a037568cb1f9ad8c",
+    measurementId: "G-NSCKXQMYLK"
   };
   
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
   // Get a database reference to our blog
   var ref = firebase.database().ref("/");
